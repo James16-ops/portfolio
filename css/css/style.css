@@ -278,3 +278,96 @@ button:hover{
     transform:translateY(-3px);
     box-shadow:0 0 20px rgba(212,175,55,.45);
 }
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero-content{
+    animation:fadeUp 1.2s ease;
+}
+
+.service-card{
+    animation:fadeUp 1s ease;
+}
+
+/* ===========================
+   GOLD GLOW
+=========================== */
+
+.hero h1{
+    text-shadow:
+    0 0 8px rgba(212,175,55,.25),
+    0 0 18px rgba(212,175,55,.15);
+}
+
+section h2{
+    text-shadow:
+    0 0 10px rgba(212,175,55,.2);
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#050505;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#d4af37;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#f1c94b;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:900px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero h2{
+    font-size:1.5rem;
+}
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+section{
+    padding:80px 6%;
+}
+
+}
