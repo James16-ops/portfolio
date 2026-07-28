@@ -1,81 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>James Baluyut | Portfolio</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <div class="logo">JB.</div>
+    <nav class="navbar">
 
-        <ul>
+        <div class="logo">
+            JB<span>.</span>
+        </div>
+
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
 
-    <!-- Home -->
-    <section id="home">
-        <h1>Hello, I'm James Baluyut</h1>
-        <h2>Student • Programmer • Creator</h2>
+    <!-- HOME -->
 
-        <p>
-            Welcome to my personal portfolio website.
-        </p>
+    <section id="home" class="hero">
 
-        <a href="#about">Explore</a>
+        <div class="hero-content">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>James Baluyut</h1>
+
+            <h2>Aspiring Programmer & Billiards Player</h2>
+
+            <p>
+                From mastering angles on the billiard table to learning the logic behind code,
+                I'm a passionate billiards player and an aspiring programmer driven by curiosity,
+                creativity, and the desire to build something meaningful.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contact" class="btn gold">
+                    Contact Me
+                </a>
+
+                <a href="#projects" class="btn outline">
+                    View Projects
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- About -->
+    <!-- ABOUT -->
+
     <section id="about">
+
         <h2>About Me</h2>
 
         <p>
-            This section will contain your biography, skills,
-            and achievements.
+            Hi! I'm James Baluyut, an aspiring programmer with a passion for technology,
+            problem-solving, and continuous learning.
+            Outside of coding, I enjoy playing billiards, where strategy,
+            focus, and precision are just as important as they are in programming.
         </p>
+
     </section>
 
-    <!-- Services -->
+    <!-- SERVICES -->
+
     <section id="services">
+
         <h2>Services</h2>
 
-        <p>
-            This section will showcase the services you offer.
-        </p>
+        <div class="service-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Modern and responsive websites.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Programming</h3>
+            <p>Learning to build practical software solutions.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Problem Solving</h3>
+            <p>Creative and logical thinking for real-world challenges.</p>
+        </div>
+
     </section>
 
-    <!-- Contact -->
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <p>
+            My future programming projects, STEM research,
+            and billiards achievements will be showcased here.
+        </p>
+
+    </section>
+
+    <!-- CONTACT -->
+
     <section id="contact">
+
         <h2>Contact Me</h2>
 
         <form>
-            <input type="text" placeholder="Your Name">
 
-            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Your Name" required>
 
-            <textarea placeholder="Your Message"></textarea>
+            <input type="email" placeholder="Your Email" required>
 
-            <button type="submit">Send Message</button>
+            <textarea rows="6" placeholder="Your Message"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
         </form>
+
     </section>
 
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
